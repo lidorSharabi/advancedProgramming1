@@ -12,7 +12,7 @@ private:
 
 public:
     int getCurrentTime();
-
+    //default constractor start time = 0
     Clock() : currentTime(0) {}
 
     //clock increase by one and return his current time

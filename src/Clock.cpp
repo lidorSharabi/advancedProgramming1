@@ -8,7 +8,7 @@
 int Clock::move(){
     return ++currentTime;
 }
-
+//return current time
 int Clock::getCurrentTime() {
     return currentTime;
 }
