@@ -17,6 +17,7 @@ int main() {
     BfsAlgorithm bfsAlgorithm;
     bfsAlgorithm.findDestination(new Point(0,0), new Point(0,2), &map).size();*//*
 */
+
     GridItem* c = new Point(1,2);
     c->printGridItem();
     //Driver *gp = new Driver(123, 22, MARRIED, 12, 222);

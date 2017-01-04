@@ -6,8 +6,6 @@ using namespace boost::archive;
 
 
 void ClientFlow::runClientFlow(int argc, char *argv[]) {
-    //delete before submitting
-    cout << "Hello, from client" << endl;
     StandardCab* newCab;
     int cab;
     char buffer[1024];
@@ -23,8 +21,6 @@ void ClientFlow::runClientFlow(int argc, char *argv[]) {
     s.flush();
     //send driver to server
     udp.sendData(serial_str, serial_str.size());
-    //delete before submitting
-    cout << "loaded one driver" << endl;
 
     //waiting for operation value
     udp.reciveData(buffer, sizeof(buffer));
@@ -51,32 +47,15 @@ void ClientFlow::runClientFlow(int argc, char *argv[]) {
             boost::archive::binary_iarchive ia1(s21);
             ia1 >> newTrip;
 
-            //add path to trip
-            /*udp.reciveData(buffer, sizeof(buffer));
-            boost::iostreams::basic_array_source<char> device2(serial_str.c_str(), serial_str.size());
-            boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s22(device2);
-            boost::archive::binary_iarchive ia2(s22);
-            ia2 >> path;
-
-            newTrip->setPointsPath(path);*/
             driver->setTrip(newTrip);
-
-            //delete
-            cout << "add path to the trip" << endl;
-
         }
         //moving driver
         if (strcmp(buffer, "move driver") == 0)
         {
-            cout << "move driver" << endl;
             //NULL input means this is cient
             driver->driveOneStep(NULL);
-
-            //delete
-            (*driver->getCurrentLocation()).printGridItem();
         }
         udp.reciveData(buffer, sizeof(buffer));
-        cout << "buffer: " << buffer <<endl;
     }
     deleteAllocatedMemory();
 }

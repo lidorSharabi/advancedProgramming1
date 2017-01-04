@@ -51,38 +51,5 @@ int main(int argc, char *argv[]) {
     ClientFlow clientFlow;
     clientFlow.runClientFlow(argc, argv);
     return 0;
-    /*
-    //delete before submitting
-    std::cout << "Hello, from client" << std::endl;
-
-    cout << argv[1] << endl;
-    Udp udp(false, atoi(argv[1]));
-    udp.initialize();
-
-    char buffer[1024];
-    udp.sendData("hello", 6);
-    udp.reciveData(buffer, sizeof(buffer));
-    cout << buffer << endl;
-
-    Driver *driver = loadNewDriver();
-    std::string serial_str;
-    boost::iostreams::back_insert_device<std::string> inserter(serial_str);
-    boost::iostreams::stream<boost::iostreams::back_insert_device<std::string> > s(inserter);
-    boost::archive::binary_oarchive oa(s);
-    oa << driver;
-    s.flush();
-
-    //Udp udp2(false, 5554);
-    //udp2.initialize();
-
-    //waiting for server to say that one driver loaded
-    udp.sendData(serial_str, serial_str.size());
-    udp.reciveData(buffer, sizeof(buffer));
-    cout << buffer << endl;
-    //wating for the server say "sup?"
-    udp.reciveData(buffer, sizeof(buffer));
-    cout << buffer << endl;
-
-    return 0;*/
 }
 

@@ -63,8 +63,6 @@ int ServerFlow::loadDriverId(){
 }
 
 void ServerFlow::runServerFlow(int argc, char *argv[]) {
-    //delete before submitting
-    std::cout << "Hello, from server" << std::endl;
     int inputOperation;
     char dummy;
     BfsAlgorithm bfsAlgorithm;
