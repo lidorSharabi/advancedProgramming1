@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src">
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googlemock/src/gmock-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googlemock/src/gmock_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googlemock/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googletest/src/gtest_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googletest/src/gtest-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googletest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Debug/googletest-src/googletest/cmake/internal_utils.cmake" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src">
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googlemock/src/gmock-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googlemock/src/gmock_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googlemock/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googletest/src/gtest_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googletest/src/gtest-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googletest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/MinSizeRel/googletest-src/googletest/cmake/internal_utils.cmake" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src">
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googlemock/src/gmock-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googlemock/src/gmock_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googlemock/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googletest/src/gtest_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googletest/src/gtest-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googletest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/RelWithDebInfo/googletest-src/googletest/cmake/internal_utils.cmake" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src">
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googlemock/src/gmock-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googlemock/src/gmock_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googlemock/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googletest/src/gtest_main.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googletest/src/gtest-all.cc" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googletest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/ex2-2ad45e11/2ad45e11/Release/googletest-src/googletest/cmake/internal_utils.cmake" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/Clock.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ServerFlow.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Map.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/BfsAlgorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ClientFlow.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ServerFlow.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Driver.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ClientFlow.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/LuxuryCab.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/BfsAlgorithm.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/StandardCab.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Point.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/TaxiCenter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Passenger.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/StandardCab.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ServerFlow1.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Color.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GenericGrid.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Socket.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Trip.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Map.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/MartialStatus.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Point.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Clock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/BfsCouple.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/serverMain.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Passenger.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Trip.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/MainFlow.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/TaxiCenter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/MainFlow.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Driver.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GridItem.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/clientMain.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Udp.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/BfsCouple.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ServerFlow1.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Manufacturer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/LuxuryCab.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Socket.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Udp.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/DriverTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/PassengerTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/StandardAndLuxuryCabsTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/MapTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/PointTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/gtest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/TexiCenterTest.cpp" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-redhat-linux/6.2.1/include" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-redhat-linux/6.2.1/include" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
