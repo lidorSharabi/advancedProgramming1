@@ -11,6 +11,7 @@ private:
     int currentTime;
 
 public:
+    //get current time
     int getCurrentTime();
     //default constractor start time = 0
     Clock() : currentTime(0) {}
