@@ -35,6 +35,7 @@ private:
         ar & boost::serialization::base_object<StandardCab>(*this);
     }*/
 public:
+    // type of cab should be 0 - means luxury cab
     LuxuryCab(int cabId, Manufacturer carManufacturer, Color color, int cabType);
 
     LuxuryCab(){}
