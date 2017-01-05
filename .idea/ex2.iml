@@ -57,18 +57,16 @@
       <sourceFolder url="file://$MODULE_DIR$/src/TaxiCenter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Passenger.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/StandardCab.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/ServerFlow1.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Color.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/GenericGrid.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Socket.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Trip.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Map.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/MartialStatus.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Point.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Clock.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/BfsCouple.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/serverMain.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Point.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Passenger.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Trip.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/MainFlow.h" isTestSource="false" />
@@ -78,8 +76,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/GridItem.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/clientMain.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Udp.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/BfsCouple.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/ServerFlow1.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Manufacturer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/LuxuryCab.h" isTestSource="false" />

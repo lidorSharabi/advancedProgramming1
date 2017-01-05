@@ -84,6 +84,11 @@ vector<GridItem *> &Trip::getPointsPath() {
     return pointsPath;
 }
 
+Trip::~Trip() {
+    delete(start);
+    delete(end);
+}
+
 /*
 void printPointsPath(){
     std::list<Driver *>::const_iterator driverIter;

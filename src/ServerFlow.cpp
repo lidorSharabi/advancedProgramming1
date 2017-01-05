@@ -107,9 +107,9 @@ void ServerFlow::runServerFlow(int argc, char *argv[]) {
         }
         scanf("\n%d", &inputOperation);
     }
-    //todo
     //free all allocated memory
     udp.sendData("exit", 4);
+    udp.~Udp();
     taxiCenter->freeAllocatedMemory();
 }
 

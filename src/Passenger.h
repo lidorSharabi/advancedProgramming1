@@ -13,7 +13,7 @@ private:
     Point* destination;
 
 public:
-    Passenger(Point* source, Point* destination);
+    Passenger(int x, int y, int x2, int y2);
     int rankDriver();
     Point* getSource();
     Point* getDestination();

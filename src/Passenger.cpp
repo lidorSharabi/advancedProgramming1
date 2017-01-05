@@ -1,8 +1,8 @@
 #include <cstdlib>
 #include "Passenger.h"
 
-Passenger::Passenger(Point *source, Point *destination)
-        : source(source), destination(destination) {}
+Passenger::Passenger(int x, int y, int x2, int y2)
+        : source(new Point (x,y)), destination(new Point (x2,y2)) {}
 
 Point *Passenger::getSource() {
     return source;
@@ -17,5 +17,7 @@ int Passenger::rankDriver() {
     }
 
 Passenger::~Passenger() {
+    delete(source);
+    delete(destination);
 }
 

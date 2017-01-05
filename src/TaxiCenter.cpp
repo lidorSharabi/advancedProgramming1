@@ -111,6 +111,7 @@ void TaxiCenter::freeAllocatedMemory() {
     freeDrivers();
     freeCabs();
     freeTrips();
+    delete(map);
 }
 
 void TaxiCenter::freeDrivers() {

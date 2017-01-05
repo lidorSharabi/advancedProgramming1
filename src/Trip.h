@@ -60,6 +60,7 @@ public:
     void setSent(bool sent);
 
 public:
+    virtual ~Trip();
 
     Trip(int id, int start_x, int start_y, int end_x, int end_y,
          int numOfPassengers, double tarrif, int startingTime);
