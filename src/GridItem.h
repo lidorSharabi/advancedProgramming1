@@ -32,6 +32,7 @@ public:
     virtual bool operator ==(const GridItem& gi) const = 0;
     //print gridItem derived class
     virtual void printGridItem() = 0;
+    virtual void deleteGridItem() = 0;
 private:
     //serialization
     friend class boost::serialization::access;

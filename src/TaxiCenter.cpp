@@ -1,4 +1,5 @@
 #include "TaxiCenter.h"
+#include "Map.h"
 
 TaxiCenter::TaxiCenter(Map *map) : map(map) {}
 

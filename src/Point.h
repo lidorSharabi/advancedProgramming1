@@ -15,7 +15,6 @@
 #include <boost/iostreams/stream.hpp>
 #include <boost/archive/binary_oarchive.hpp>
 #include <boost/archive/binary_iarchive.hpp>
-#include <boost/serialization/stack.hpp>
 #include <boost/serialization/export.hpp>
 #include <boost/serialization/base_object.hpp>
 #include <boost/serialization/serialization.hpp>
@@ -65,6 +64,8 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Point &p);
 
     void printGridItem();
+
+    void deleteGridItem();
 
     void setX(int x);
 

@@ -1,12 +1,14 @@
 #include "ClientFlow.h"
 #include "Udp.h"
 #include "Map.h"
+
 using namespace std;
 using namespace boost::archive;
 
 
 void ClientFlow::runClientFlow(int argc, char *argv[]) {
     StandardCab* newCab;
+    std::list<Trip*> tripsList;
     int cab;
     char buffer[1024];
     Udp udp(false, atoi(argv[2]), argv[1]);
@@ -46,7 +48,8 @@ void ClientFlow::runClientFlow(int argc, char *argv[]) {
             boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s21(device1);
             boost::archive::binary_iarchive ia1(s21);
             ia1 >> newTrip;
-
+            //add newTrip to the list of trip and set this trip fot the driver
+            tripsList.push_back(newTrip);
             driver->setTrip(newTrip);
         }
         //moving driver
@@ -57,7 +60,19 @@ void ClientFlow::runClientFlow(int argc, char *argv[]) {
         }
         udp.reciveData(buffer, sizeof(buffer));
     }
+    //delete All allocated Memory
     deleteAllocatedMemory();
+    driver->getCab()->~StandardCab();
+    freeTrips(tripsList);
+    driver->~Driver();
+    udp.~Udp();
+}
+
+void ClientFlow::freeTrips(std::list<Trip*> trips) {
+    while (!trips.empty()){
+        delete(trips.front());
+        trips.pop_front();
+    }
 }
 
 MartialStatus ClientFlow::getMartialStatusBySymbol(char symbol){

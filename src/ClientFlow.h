@@ -13,12 +13,14 @@ class ClientFlow {
 
 public:
     void runClientFlow(int argc, char *argv[]);
-
+private:
     MartialStatus getMartialStatusBySymbol(char symbol);
 
     Driver* loadNewDriver();
 
     void deleteAllocatedMemory();
+
+    void freeTrips(std::list<Trip*> trips);
 };
 
 

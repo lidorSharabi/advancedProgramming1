@@ -61,5 +61,7 @@ void Point::printGridItem() {
 cout << "(" << this->x << "," << this->y << ")" << endl;
 }
 
-
+void Point::deleteGridItem(){
+    delete(this);
+}
 BOOST_CLASS_EXPORT(Point)

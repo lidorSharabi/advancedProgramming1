@@ -72,9 +72,13 @@ void Driver::driveOneStep(Map* map) {
     for (int i = 0; i < cab->getSpeed(); i++) {
         //assuming trip exist
         if (!(trip->getPointsPath().empty())){
-            ;
             if (map != NULL) {
                 map->updateDriverLocation(this, currentLocation);
+            }
+            else
+            {
+                //means that the sever is responsibale to delete the grid item
+                currentLocation->deleteGridItem();
             }
             currentLocation = trip->getPointsPath().back();
             trip->getPointsPath().pop_back();
