@@ -1,6 +1,6 @@
 set(core_SRCS Point.cpp StandardCab.cpp LuxuryCab.cpp Trip.cpp Driver.cpp
         Passenger.cpp Map.cpp TaxiCenter.cpp MainFlow.cpp  main.cpp BfsAlgorithm.cpp
-        BfsCouple.cpp Socket.cpp Udp.cpp ServerFlow1.cpp clientMain.cpp Clock.cpp
+        BfsCouple.cpp Socket.cpp Udp.cpp clientMain.cpp Clock.cpp
         serverMain.cpp ServerFlow.cpp ServerFlow.h ClientFlow.cpp ClientFlow.h)
 
 project(src)
