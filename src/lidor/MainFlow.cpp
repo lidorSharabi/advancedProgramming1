@@ -1,5 +1,5 @@
 #include "MainFlow.h"
-#include "Map.h"
+#include "../Map.h"
 
 MartialStatus MainFlow::getMartialStatusBySymbol(char symbol){
     switch (symbol) {

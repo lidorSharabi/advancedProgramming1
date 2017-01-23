@@ -1,6 +1,6 @@
 #include "MainFlow.h"
-#include "BfsAlgorithm.h"
-#include "Map.h"
+#include "../BfsAlgorithm.h"
+#include "../Map.h"
 
 using namespace std;
 using namespace boost::archive;

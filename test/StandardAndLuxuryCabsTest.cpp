@@ -4,7 +4,7 @@
 
 #include "gtest/gtest.h"
 #include "../src/StandardCab.h"
-#include "../src/LuxuryCab.h"
+#include "../src/lidor/LuxuryCab.h"
 using namespace std;
 class StandardAndLuxuryCabsTest: public::testing::Test
 {

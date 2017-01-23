@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 #include "../src/TaxiCenter.h"
-#include "../src/LuxuryCab.h"
+#include "../src/lidor/LuxuryCab.h"
 #include "../src/Map.h"
 
 using namespace std;
