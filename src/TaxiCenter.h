@@ -8,7 +8,8 @@
 #include "Driver.h"
 #include "Point.h"
 #include "Clock.h"
-#include "Udp.h"
+#include "connection/Udp.h"
+#include "connection/Tcp.h"
 
 class TaxiCenter {
 private:
@@ -27,10 +28,10 @@ private:
 
     void freeUnnecessaryTrips();
 
-    void bindTripsToDrivers(Udp* udp);
+    void bindTripsToDrivers();
 
 public:
-    void findDriverLocation(int driverId);
+    void requestForDriverLocation(int driverId);
 
     TaxiCenter(Map *map);
 
@@ -46,7 +47,9 @@ public:
 
     void addTrip(Trip *t);
 
-    void startAllDriving(Udp* udp);
+    void startAllDriving();
+
+    list<Driver *> getDrivers();
 
     void freeAllocatedMemory();
 
@@ -54,7 +57,8 @@ public:
 
     int increaseClock();
 
-    void bindCabsToDrivers(Udp *udp);
+    void bindCabsToDrivers();
+
 };
 
 

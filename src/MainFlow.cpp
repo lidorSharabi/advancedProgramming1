@@ -117,10 +117,10 @@ void MainFlow::runMainFlow() {
                 taxiCenter->addCab(loadNewCab());
                 break;
             case 4: //request for driver location
-                taxiCenter->findDriverLocation(loadDriverId());
+                taxiCenter->requestForDriverLocation(loadDriverId());
                 break;
             case 6: //start driving
-                taxiCenter->startAllDriving(NULL);
+                //taxiCenter->startAllDriving(NULL);
                 break;
             case 7: //free all allocated memory
                 taxiCenter->freeAllocatedMemory();

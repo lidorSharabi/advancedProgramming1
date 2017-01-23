@@ -39,7 +39,7 @@ void Driver::updateRankDriver(int rank) {
     this->sumOfSatisfaction += rank;
 }
 
-void Driver::addCab(StandardCab *cab) {
+void Driver::bindCabToDriver(StandardCab *cab) {
     this->cab = cab;
 }
 
@@ -73,11 +73,12 @@ void Driver::driveOneStep(Map* map) {
         //assuming trip exist
         if (!(trip->getPointsPath().empty())){
             if (map != NULL) {
-                map->updateDriverLocation(this, currentLocation);
+                //means this is the server side, update driver location on map
+                //caution!!! has to invoke before updating to his current location
+                map->updateDriverLocation(this, trip->getPointsPath().back());
             }
-            else
-            {
-                //means that the sever is responsibale to delete the grid item
+            else {
+                //means that the sever is responsible to delete the grid item
                 currentLocation->deleteGridItem();
             }
             currentLocation = trip->getPointsPath().back();

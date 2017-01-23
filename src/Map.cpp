@@ -1,5 +1,4 @@
 #include "Map.h"
-#include <vector>
 
 
 Map::Map(int height, int width, list<Point *> obstacles)
@@ -30,7 +29,6 @@ void Map::createGridPoints() {
                 pointsGrid[i][j] = NULL;
             }
         }
-
     }
 }
 
@@ -100,4 +98,8 @@ list<GridItem *>* Map::getNeighbors(GridItem* gridItem) {
         neighbors->push_back(pointsGrid[p->getX() - 1][p->getY()]);
     }
     return neighbors;
+}
+
+std::list<Driver *> Map::getDriverAt(Point point) {
+    return driversGrid[point.getX()][point.getY()];
 }

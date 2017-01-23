@@ -37,7 +37,7 @@ vector<GridItem*> BfsAlgorithm:: findDestination(GridItem* source, GridItem* des
         //pop current item and update the current to the next item
         Q.pop_front();
         current = Q.front();
-        //todo delete bfs couple that has been pop
+        //todo delete bfs couple that has been pop - done!!!
     }
     //go to "printPathToDestination" class to print the path to destination
     trace = pathToDestination(current);
@@ -65,9 +65,9 @@ void BfsAlgorithm::printPath(vector<GridItem*> trace){
     }
 }
 void BfsAlgorithm::deleteAll(deque<BfsCouple*> q){
+    //delete all the bfsCouple objects in the garbage deque
     while(!q.empty()){
         q.front()->~BfsCouple();
         q.pop_front();
     }
-    //todo delete bfs couple that has been pop
 }

@@ -43,6 +43,8 @@ public:
     bool isValid(Point p);
 
     bool isObstacle(int i, int j);
+
+    std::list<Driver *> getDriverAt(Point point);
 };
 
 #endif //MYPROJECTNAME_MAP_H

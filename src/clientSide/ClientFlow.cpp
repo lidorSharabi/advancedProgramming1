@@ -1,18 +1,24 @@
 #include "ClientFlow.h"
-#include "Udp.h"
-#include "Map.h"
+#include "../connection/Tcp.h"
+#include "../Map.h"
+#include "../../easylogging++.h"
 
 using namespace std;
 using namespace boost::archive;
-
 
 void ClientFlow::runClientFlow(int argc, char *argv[]) {
     StandardCab* newCab;
     std::list<Trip*> tripsList;
     int cab;
-    char buffer[1024];
-    Udp udp(false, atoi(argv[2]), argv[1]);
-    udp.initialize();
+    char buffer[40000];
+    Tcp tcp(false, atoi(argv[2]), argv[1]);
+    tcp.initialize();
+
+    //check the connection work well
+    memset(buffer, 0 , sizeof(buffer));
+    tcp.reciveData(buffer, sizeof(buffer), 0);
+    LOG(INFO) << buffer;
+
     //serialize driver
     Driver *driver = loadNewDriver();
     std::string serial_str;
@@ -22,29 +28,34 @@ void ClientFlow::runClientFlow(int argc, char *argv[]) {
     oa << driver;
     s.flush();
     //send driver to server
-    udp.sendData(serial_str, serial_str.size());
-
+    tcp.sendData(serial_str, serial_str.size());
     //waiting for operation value
-    udp.reciveData(buffer, sizeof(buffer));
+    memset(buffer, 0 , sizeof(buffer));
+    tcp.reciveData(buffer, sizeof(buffer), 0);
     while (strcmp(buffer, "exit") != 0){
+        //print the recive operation
+        LOG(INFO) << buffer;
         //add cab to driver
         if (strcmp(buffer, "add new cab") == 0)
         {
-            udp.reciveData(buffer, sizeof(buffer));
-            boost::iostreams::basic_array_source<char> device1(buffer, 1024);
+            LOG(INFO) << "CASE ADD NEW CAB";
+            memset(buffer, 0 , sizeof(buffer));
+            tcp.reciveData(buffer, sizeof(buffer), 0);
+            boost::iostreams::basic_array_source<char> device1(buffer, sizeof(buffer));
             boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s21(device1);
             boost::archive::binary_iarchive ia1(s21);
             ia1 >> newCab;
-            driver->addCab(newCab);
+            driver->bindCabToDriver(newCab);
         }
         //add trip
         if (strcmp(buffer, "add trip") == 0)
         {
             //add trip to the driver
+            LOG(INFO) << "CASE ADD NEW TRIP";
             Trip* newTrip;
-            vector<GridItem*> path;
-            udp.reciveData(buffer, sizeof(buffer));
-            boost::iostreams::basic_array_source<char> device1(buffer, 1024);
+            memset(buffer, 0 , sizeof(buffer));
+            tcp.reciveData(buffer, sizeof(buffer), 0);
+            boost::iostreams::basic_array_source<char> device1(buffer, sizeof(buffer));
             boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s21(device1);
             boost::archive::binary_iarchive ia1(s21);
             ia1 >> newTrip;
@@ -55,17 +66,21 @@ void ClientFlow::runClientFlow(int argc, char *argv[]) {
         //moving driver
         if (strcmp(buffer, "move driver") == 0)
         {
+            LOG(INFO) << "CASE ADD NEW TRIP";
             //NULL input means this is cient
             driver->driveOneStep(NULL);
+            Point* p = (Point*)driver->getCurrentLocation();
+            LOG(INFO) << (*p);
         }
-        udp.reciveData(buffer, sizeof(buffer));
+        memset(buffer, 0 , sizeof(buffer));
+        tcp.reciveData(buffer, sizeof(buffer), 0);
     }
     //delete All allocated Memory
     deleteAllocatedMemory();
     driver->getCab()->~StandardCab();
     freeTrips(tripsList);
     driver->~Driver();
-    udp.~Udp();
+    tcp.~Tcp();
 }
 
 void ClientFlow::freeTrips(std::list<Trip*> trips) {

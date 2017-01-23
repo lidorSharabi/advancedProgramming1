@@ -41,7 +41,11 @@ private:
     GridItem *currentLocation;
     bool availbale;
     Trip *trip;
+
 public:
+
+    list<int> operations;
+
     Trip *getTrip();
 
     void setTrip(Trip *trip);
@@ -59,7 +63,7 @@ private:
         ar & seniority;
         ar & numOfPassengers;
         ar & sumOfSatisfaction;
-        ar & cab;
+        //ar & cab;
         //ar & passengersl;
         ar & cabId;
         ar & currentLocation;
@@ -73,7 +77,7 @@ public:
 
     Driver() : id(0), age(0), martialStatus(SINGLE), seniority(0), cabId(0), cab(NULL) {}
 
-    virtual ~Driver();
+    ~Driver();
 
     GridItem* getCurrentLocation();
 
@@ -97,7 +101,7 @@ public:
 
     list<Passenger *> getPassengersList();
 
-    void addCab(StandardCab *cab);
+    void bindCabToDriver(StandardCab *cab);
 
     void addNewPassenger(Passenger *passenger);
 

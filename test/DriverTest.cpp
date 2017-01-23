@@ -17,7 +17,7 @@ protected:
         driver1.addNewPassenger(passenger2);
         driver2.addNewPassenger(passenger1);
         driver2.removePassenger(passenger1);
-        driver1.addCab(cab);
+        driver1.bindCabToDriver(cab);
         driver1.updateRankDriver(passenger1->rankDriver());
     }
 

@@ -1,4 +1,6 @@
 #include "MainFlow.h"
+#include "BfsAlgorithm.h"
+#include "Map.h"
 
 using namespace std;
 using namespace boost::archive;
@@ -10,24 +12,27 @@ int main() {
     std::cout << "ex2 - src main" << std::endl;
     /*MainFlow run;
     run.runMainFlow();*/
-    /*
-    std::list<Point*> pointList;
+
+    cout<< strcmp("add", "aee");
+    /*std::list<Point*> pointList;
     pointList.push_back(new Point(1,1));
-    Map map(5,5, pointList);
+    Map* map = new Map(1000,1000, pointList);
     BfsAlgorithm bfsAlgorithm;
-    bfsAlgorithm.findDestination(new Point(0,0), new Point(0,2), &map).size();*//*
+    cout << "start cal bfs" << endl;
+    bfsAlgorithm.findDestination(new Point(0,0), new Point(999,999), map).size();
 */
 
-    GridItem* c = new Point(1,2);
-    c->printGridItem();
-    //Driver *gp = new Driver(123, 22, MARRIED, 12, 222);
+    /*GridItem* c = new Point(1,2);
+    //c->printGridItem();
+    Driver *gp = new Driver(0, 0, SINGLE, 0, 0);
     //StandardCab *gp = new StandardCab(222,Manufacturer ::FIAT,Color ::BLUE, 0);
-    //gp->addCab(standardCab);
-    Trip *gp = new Trip(new Point(0,0), new Point(0,2));
+    //gp->bindCabToDriver(standardCab);
+    //Trip *gp = new Trip(new Point(0,0), new Point(0,2));
     //vector<Point*> a;
     //p->setPointsPath(a);
 
 
+    cout << *gp << endl;
     vector<GridItem*> p;
     //p = a;
     p.push_back(new Point(1,1));
@@ -43,12 +48,12 @@ int main() {
     oa << gp;
     s.flush();
 
-    Trip* gp2;
+    Driver* gp2;
     boost::iostreams::basic_array_source<char> device(serial_str.c_str(), serial_str.size());
     boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s2(device);
     boost::archive::binary_iarchive ia(s2);
     ia >> gp2;
-/*
+*//*
 
     GridItem* gpp; //- not good
     gpp = new Point(1,1); //- not good
@@ -64,15 +69,16 @@ int main() {
     boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s2p(devicep);
     boost::archive::binary_iarchive iap(s2p);
     iap >> gp2p;
-    */
+    *//*
 
     //cout << *gp2 << endl;
     cout <<"###################################" <<endl;
+    cout << *gp2 << endl;
     //cout << (*gp) << endl;
 
     //delete gp;
     //delete gp2;
-
+*/
 return 0;
 }
 

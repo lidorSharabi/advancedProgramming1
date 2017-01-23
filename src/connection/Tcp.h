@@ -1,77 +1,45 @@
 /************************************************************
-* File description: Socket class header file. 				*
-* contains socket properties as members, declaration on 	*
-* methods, and const numbers using by all classes which		*
-* inherit from Socket class									*
+* File description: TCP header file. the class inherit from	*
+* socket. methods of tcp socket type						*
 ************************************************************/
 
-#ifndef SOCKET_H_
-#define SOCKET_H_
+#ifndef TCP_H_
+#define TCP_H_
 
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <cstring>
-#include <iostream>
-#include <string>
-using namespace std;
-
-//return values to each function if error happened
-#define CORRECT 0
-#define ERROR_SOCKET 1
-#define ERROR_BIND 2
-#define ERROR_LISTEN 3
-#define ERROR_CONNECT 4
-#define ERROR_SEND 5
-#define ERROR_RECIVE 6
-#define ERROR_ACCEPT 7
-#define CONNECTION_CLOSED 8
-
-#define IP "127.0.0.1"
-
-
-class Socket {
-protected:
-	//true is the socket is for a server, false if for a client
-	bool isServer;
-	//the socket descriptor return from sock()
-	int socketDescriptor;
-	//ip adress
-	string ip_address;
-	int backLog;
-	//port number
-	int port_number;
+#include "Socket.h"
+#include <stdlib.h>
+class Tcp: public Socket {
 public:
 	/***********************************************************************
-	* function name: Socket												   *
-	* The Input: none													   *
+	* function name: Tcp												   *
+	* The Input: Boolean, true - if server, false if client and port number*
 	* The output: none										               *
-	* The Function operation: creating new Socket object			       *
+	* The Function operation: creating new Tcp						       *
 	***********************************************************************/
-	Socket();
+	Tcp(bool isServers, int port_num, string ip_address);
 	/***********************************************************************
-	* function name: ~Socket											   *
+	* function name: ~Tcp												   *
 	* The Input: none													   *
 	* The output: none										               *
 	* The Function operation: default destructor					       *
 	***********************************************************************/
-	virtual ~Socket();
-	/***********************************************************************
+	virtual ~Tcp();
+/***********************************************************************
 	* function name: initialize											   *
 	* The Input: none              										   *
 	* The output: int number representing the return status		           *
 	* The Function operation: initialize the Socket object and getting a   *
-	* socket descriptor. pure virtual method							   *
+	* socket descriptor.												   *
 	***********************************************************************/
-	virtual int initialize() = 0;
+	int initialize();
 	/***********************************************************************
 	* function name: sendData											   *
 	* The Input: string representing the data to send		               *
 	* The output: int number representing the return status		           *
 	* The Function operation: sending the input data to the socket         *
-	* who connect to this socket. pure virtual method					   *
+	* who connect to this socket. 										   *
 	***********************************************************************/
-	virtual int sendData(string data, int length) = 0;
+	int sendData(string data, int clientDescriptor, bool stringMessage = false);
 	/***********************************************************************
 	* function name: recive	`											   *
 	* The Input: none										               *
@@ -79,11 +47,9 @@ public:
 	* The Function operation: getting data from the other socket and print *
 	* the data															   *
 	***********************************************************************/
-	virtual int reciveData(char* buffer, int size) = 0;
+    int reciveData(char* buffer, int size, int clientDescriptor);
 
-
-
-
+    int acceptClient();
 };
 
-#endif /* SOCKET_H_ */
+#endif /* TCP_H_ */

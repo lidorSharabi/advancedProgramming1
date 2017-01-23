@@ -1,9 +1,4 @@
-
-#include <unistd.h>
 #include <iostream>
-#include "Udp.h"
-#include <fstream>
-#include <sstream>
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/text_iarchive.hpp>
 #include <boost/tokenizer.hpp>
@@ -15,10 +10,11 @@
 #include <boost/iostreams/stream.hpp>
 #include <boost/archive/binary_oarchive.hpp>
 #include <boost/archive/binary_iarchive.hpp>
-#include "Point.h"
-#include "StandardCab.h"
-#include "Driver.h"
+#include "../Point.h"
+#include "../Driver.h"
 #include "ClientFlow.h"
+#include "../../easylogging++.h"
+_INITIALIZE_EASYLOGGINGPP
 
 using namespace std;
 using namespace boost::archive;
