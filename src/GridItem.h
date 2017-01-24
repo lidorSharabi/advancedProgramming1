@@ -33,6 +33,12 @@ public:
     //print gridItem derived class
     virtual void printGridItem() = 0;
     virtual void deleteGridItem() = 0;
+    virtual void setFather(GridItem* father) = 0;
+    virtual GridItem* getFather() = 0;
+    virtual void setVisited(bool visited) = 0;
+
+
+    virtual bool isVisited() = 0;
 private:
     //serialization
     friend class boost::serialization::access;

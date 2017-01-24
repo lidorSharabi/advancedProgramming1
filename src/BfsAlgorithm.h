@@ -24,14 +24,14 @@ private:
      * the function gets pointer to BfsCouple - an object which hold a GridItem,
      * and a reference to another BfsCouple - the "father" of the GridItem on the grid.
      */
-    vector<GridItem*> pathToDestination(BfsCouple* b);
+    vector<GridItem*> pathToDestination(GridItem* gridItem);
     /*
      * deletes all the items which allocated in the memory while program.
      * gets a pointer to deque which holds all the BfsCouple which created.
      */
-    void deleteAll(deque<BfsCouple*> q);
+    void resetBfsAlgorithm(list<GridItem *> q);
 
-    void printPath(vector<GridItem*> trace);
+    void printPath(vector<GridItem*> path);
 };
 
 

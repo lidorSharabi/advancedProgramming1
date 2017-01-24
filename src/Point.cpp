@@ -6,6 +6,8 @@ using namespace std;
 Point::Point(int f, int s) {
     this->x = f;
     this->y = s;
+    this->visited = false;
+    this->father = NULL;
 }
 
 Point::~Point() {
@@ -64,4 +66,21 @@ cout << "(" << this->x << "," << this->y << ")" << endl;
 void Point::deleteGridItem(){
     delete(this);
 }
+
+bool Point::isVisited() {
+    return visited;
+}
+
+void Point::setVisited(bool visited) {
+    Point::visited = visited;
+}
+
+GridItem* Point::getFather() {
+    return father;
+}
+
+void Point::setFather(GridItem *father) {
+    Point::father = (Point*)father;
+}
+
 BOOST_CLASS_EXPORT(Point)

@@ -13,14 +13,14 @@ int main() {
     /*MainFlow run;
     run.runMainFlow();*/
 
-    cout<< strcmp("add", "aee");
-    /*std::list<Point*> pointList;
+    //cout<< strcmp("add", "aee");
+    std::list<Point*> pointList;
     pointList.push_back(new Point(1,1));
     Map* map = new Map(1000,1000, pointList);
     BfsAlgorithm bfsAlgorithm;
     cout << "start cal bfs" << endl;
-    bfsAlgorithm.findDestination(new Point(0,0), new Point(999,999), map).size();
-*/
+    bfsAlgorithm.findDestination(new Point(0,0), new Point(2,1), map);
+    bfsAlgorithm.findDestination(new Point(0,0), new Point(3,1), map);
 
     /*GridItem* c = new Point(1,2);
     //c->printGridItem();

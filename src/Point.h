@@ -27,7 +27,10 @@ using namespace boost::archive;
 
 class Point : public GridItem {
 private:
+
     int x, y;
+    bool visited;
+    Point* father;
 
     friend class boost::serialization::access;
     //serialization Point x, y members
@@ -47,6 +50,12 @@ public:
 
     //gets the x value of point
     int getX();
+
+    void setVisited(bool visited);
+
+    GridItem *getFather();
+
+    void setFather(GridItem *father);
 
     //gets the y value of point
     int getY();
@@ -78,6 +87,8 @@ public:
     bool operator==(const GridItem &p) const;
 
     Point() : x(0), y(0) {}
+
+    bool isVisited();
 };
 
 

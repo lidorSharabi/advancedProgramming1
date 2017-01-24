@@ -9,7 +9,7 @@ void ServerFlow::runServerFlow(int argc, char *argv[]) {
     char dummy;
     Trip *trip;
     //initialize connection
-    Tcp* tcp = new Tcp(true, atoi(argv[1]), "127.0.0.1");
+    Tcp* tcp = new Tcp(true, atoi(argv[2]), "127.0.0.1");
     this->tcp= tcp;
     //after initialize the server is ready to accept clients
     tcp->initialize();
