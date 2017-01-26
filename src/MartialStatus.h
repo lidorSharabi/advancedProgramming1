@@ -7,6 +7,7 @@
 
 
 enum MartialStatus{
+    NOT_VALID_MARTIALSTATUS,
     SINGLE,
     MARRIED,
     DIVORCED,

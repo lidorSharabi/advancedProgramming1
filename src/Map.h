@@ -4,7 +4,7 @@
 #include <list>
 #include <vector>
 #include "Point.h"
-#include "GenericGrid.h"
+#include "searchAlgo/GenericGrid.h"
 #include "Driver.h"
 
 

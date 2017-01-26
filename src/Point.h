@@ -1,7 +1,7 @@
 #ifndef AP_POINT_H
 #define AP_POINT_H
 
-#include "GridItem.h"
+#include "searchAlgo/GridItem.h"
 #include <fstream>
 #include <sstream>
 #include <boost/archive/text_oarchive.hpp>

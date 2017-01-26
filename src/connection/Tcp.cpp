@@ -81,6 +81,7 @@ int Tcp::initialize() {
         }
     }
     //return correct if there were no problem
+    LOG(INFO) << "SUCCESS CONNECT";
     return CORRECT;
 }
 

@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "../src/BfsAlgorithm.h"
+#include "../src/searchAlgo/BfsAlgorithm.h"
 #include "../src/Map.h"
 
 using namespace std;

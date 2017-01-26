@@ -6,7 +6,7 @@
 #include "Trip.h"
 #include "Passenger.h"
 #include "Point.h"
-#include "GridItem.h"
+#include "searchAlgo/GridItem.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>

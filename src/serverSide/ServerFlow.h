@@ -11,19 +11,22 @@
 #include "../TaxiCenter.h"
 #include "../Map.h"
 #include "../threads/ClientThreadFlow.h"
+#include "../ThreadPoolDemo/ThreadPool.h"
+
+#define BFS_THEARDS 5
 
 class ServerFlow {
 private:
     TaxiCenter *taxiCenter;
-
     Tcp* tcp;
+    ThreadPool threadPool;
 private:
 
     Manufacturer getManufacturerBySymbol(char symbol);
 
     Color getColorBySymbol(char symbol);
 
-    Trip *loadNewTrip();
+    void loadNewTrip();
 
     StandardCab *loadNewCab();
 
@@ -38,6 +41,8 @@ private:
     void SendEndOperationToClients();
 
     void waitingForThreadsToEnd();
+
+    bool isNumber(const std::string& s);
 
 public:
 

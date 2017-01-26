@@ -3,7 +3,7 @@
 //
 
 #include "SearchThread.h"
-#include "../BfsAlgorithm.h"
+#include "../searchAlgo/BfsAlgorithm.h"
 
 SearchThread::SearchThread(Trip* trip, Map* map):
         trip(trip), map(map){}

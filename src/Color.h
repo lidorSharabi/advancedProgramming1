@@ -7,6 +7,7 @@
 
 
 enum Color {
+    NOT_VALID_COLOR,
     RED,
     BLUE,
     GREEN,

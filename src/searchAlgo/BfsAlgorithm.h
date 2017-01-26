@@ -3,7 +3,7 @@
 
 #include "GridItem.h"
 #include "GenericGrid.h"
-#include "BfsCouple.h"
+#include "../lidor/BfsCouple.h"
 #include <vector>
 /*
  * A class which hold a BFS algorithm.

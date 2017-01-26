@@ -6,6 +6,7 @@
 #define MYPROJECTNAME_MANUFACTURER_H
 
 enum Manufacturer{
+    NOT_VALID_MANUFACTURER,
     HONDA,
     SUBARO,
     TESLA,

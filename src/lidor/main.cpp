@@ -1,11 +1,12 @@
 #include "MainFlow.h"
-#include "../BfsAlgorithm.h"
+#include "../searchAlgo/BfsAlgorithm.h"
 #include "../Map.h"
 
 using namespace std;
 using namespace boost::archive;
 
-
+#include "../../easylogging++.h"
+_INITIALIZE_EASYLOGGINGPP
 int main() {
 
     //delete before submitting
@@ -13,6 +14,42 @@ int main() {
     /*MainFlow run;
     run.runMainFlow();*/
 
+    std::list<Point*> pointList;
+    LOG(INFO) << "START";
+    Map p(1000,1000, pointList);
+    LOG(INFO) << "END";
+    Point* a = new Point(0,0);
+    Point b = *a;
+    b.setX(2);
+    a->setX(3);
+    cout << *a<< endl << b << endl;
+    Color c = Color::BLUE;
+    if (c == BLUE){
+        cout <<"lilili";
+    }
+    int num = 0, num1;
+    string str;
+    vector<string> splitedStr;
+
+    getline(cin, str);
+    boost::split(splitedStr, str, boost::is_any_of(" "));
+    while (splitedStr.size()){
+    double d = strtod(splitedStr[num].c_str(), NULL);
+    //cout << splitedStr.size() << endl;
+    cout << d << endl;
+    num++;
+    }
+    /*num ;
+    //cin >> num1 ;
+    cin >> string1 ;
+    getline(cin, string1);
+    //vector<string> a = boost::split();
+    if (cin.fail()){
+        cout << "fail" <<endl;
+    }
+    //cout << num << endl;
+    //cout << num1 << endl;
+    cout << string1 << endl;
     //cout<< strcmp("add", "aee");
     std::list<Point*> pointList;
     pointList.push_back(new Point(1,1));
@@ -21,7 +58,7 @@ int main() {
     cout << "start cal bfs" << endl;
     bfsAlgorithm.findDestination(new Point(0,0), new Point(2,1), map);
     bfsAlgorithm.findDestination(new Point(0,0), new Point(3,1), map);
-
+*/
     /*GridItem* c = new Point(1,2);
     //c->printGridItem();
     Driver *gp = new Driver(0, 0, SINGLE, 0, 0);

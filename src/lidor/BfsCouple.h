@@ -5,7 +5,7 @@
 #ifndef MYPROJECTNAME_BFSCOUPLE_H
 #define MYPROJECTNAME_BFSCOUPLE_H
 
-#include "GridItem.h"
+#include "../searchAlgo/GridItem.h"
 /*
  * holds 2 references - one to GridItem on a grid,
  * and second to another BfsCouple, which represents the GridItem's "father" on a grid.

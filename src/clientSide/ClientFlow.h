@@ -21,6 +21,8 @@ private:
     void deleteAllocatedMemory();
 
     void freeTrips(std::list<Trip*> trips);
+
+    bool isNumber(const std::string &s);
 };
 
 
